@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistActivity"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp">
+
+            <EditText
+                android:id="@+id/userId"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:layout_weight="1"
+                android:layout_gravity="left"
+                android:autofillHints=""
+                android:hint="아이디"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/idcheck"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="중복확인" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3~20자 사이의 영문+숫자로 이루어져야 하며 영문으로 시작되어야 합니다." />
+
+        <EditText
+            android:id="@+id/userPw"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="#ffffff"
+            android:autofillHints=""
+            android:hint="비밀번호"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6~20자로 입력되어야 합니다." />
+
+       <EditText
+            android:id="@+id/userPwConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:autofillHints=""
+            android:hint="비밀번호 확인"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="#ffffff"
+            android:autofillHints=""
+            android:hint="이름"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/userPhone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="#ffffff"
+            android:autofillHints=""
+            android:hint="휴대폰 번호"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:inputType="phone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- 없이 입력해주세요." />
+
+        <EditText
+            android:id="@+id/userEmail"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:autofillHints=""
+            android:hint="이메일 주소"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/nickname"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:ems="10"
+            android:hint="닉네임"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="가입" />
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="취소" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">짜카오톡</string>
+    <string name="login">로그인</string>
+    <string name="todo">TODO</string>
+    <string name="userId">아이디</string>
+    <string name="userPw">비밀번호</string>
+</resources>
